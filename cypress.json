@@ -1,0 +1,25 @@
+{
+
+    "$schema":"https://on.cypress.io/cypress.schema.json",
+                
+     "taskTimeout": 50000,
+     "defaultCommandTimeout":50000,
+     "pageLoadTimeout":50000, 
+     "responseTimeout":50000,
+     "requestTimeout":50000,               
+     "video": true,
+     "pluginsFile": "cypress/plugins/index.js",  
+     "viewportHeight": 968,      
+     "viewportWidth": 1280,
+     "waitForAnimations": true,
+     "chromeWebSecurity": false,
+     "reporter": "cypress-mochawesome-reporter",
+     
+     "env":{
+      "url":"https://www.saucedemo.com",
+      "uName":"standard_user",
+      "pWord":"secret_sauce"
+      
+     }
+}
+

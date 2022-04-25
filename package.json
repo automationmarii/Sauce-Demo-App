@@ -1,0 +1,22 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-runner": "npx cypress open",
+    "generatetestData": "npx cypress run --spec cypress/integration/SauceDemo/GenerateTestData.js",
+    "saucedemo-chrome": "npx cypress run --browser chrome --reporter mochawesome --spec cypress/integration/SauceDemo/SauceDemo.spec.js",
+    "saucedemo-firefox": "npx cypress run --browser firefox --reporter mochawesome --spec cypress/integration/SauceDemo/SauceDemo.spec.js",
+    "saucedemo-edge": "npx cypress run --browser edge --reporter mochawesome --spec cypress/integration/SauceDemo/SauceDemo.spec.js",
+    "saucedemo": "npx cypress run  --browser chrome --spec 'cypress/integration/SauceDemo/GenerateTestData.js,cypress/integration/SauceDemo/SauceDemo.spec.js'"
+  },
+  "author": "SAUCE DEMO",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.4",
+    "cypress-mochawesome-reporter": "^3.0.1",
+    "cypress-wait-until": "^1.7.1",
+    "xlsx": "^0.16.9"
+  }
+}
